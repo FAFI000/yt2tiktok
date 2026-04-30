@@ -1,0 +1,9 @@
+services:
+  - type: worker
+    name: yt2tiktok-bot
+    runtime: docker
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false
